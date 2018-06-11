@@ -1,0 +1,22 @@
+SMU Doing Data Science Last Revised 6/10/2018
+
+This is Allen Crane's Codebook file for Homework 5 for the MSDS 6306 - Doing Data Science class for the Summer 2018 semester.
+
+Author: Allen Crane Mobile: 210-913-5072 Email: acrane@mail.smu.edu
+
+
+Purpose of this project: To submit a list of popular girl baby names from 2 files, one for names from 2015, another from 2016.
+
+Source data files: 
+yob2015.csv #popular baby names from 2015
+yob2016.csv #popular baby names from 2016
+
+Processed data files:
+y2015   #R-loaded yob2015.csv
+y2016   #R-loaded yob2016.csv
+final   #merged data from y2015 and y2016, only includes names that occurred in both years
+        #also created a new column "Total" that combines name frequency from both years.
+final2  #final data, but sorted on "Total" column, descending
+final3  #final2 data, but only includes girl names
+final4  #final3 data, but only includes top 10 names, by "Total column"
+Top_Girl_Names.csv  #export of R final4 file
